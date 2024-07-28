@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Home_Page extends StatefulWidget {
+  const Home_Page({super.key});
 
   @override
-
-  State<HomePage> createState() => _HomePageState();
+  State<Home_Page> createState() => _Home_PageState();
 }
 
-
-class _HomePageState extends State<HomePage> {
+class _Home_PageState extends State<Home_Page> {
   int num=0;
-void addNum(){
-  setState(() {
-    num++;
-  });
-}
+  void addNum(){
+    setState(() {
+      num++;
+    });
+  }
   void minusNum(){
     setState(() {
       num--;
