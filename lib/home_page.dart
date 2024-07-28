@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:counter/bottom_with_inkwell.dart';
+
 class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
 
@@ -42,28 +44,15 @@ class _Home_PageState extends State<Home_Page> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  InkWell(
-                    onTap:minusNum ,
-
-                    child: Container(child: Center(child: Icon(Icons.remove,size: 35,color: Color(0xFFf3d2c1),)),
-                      height: 50,width: 45,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF8c7851),
-                        borderRadius: BorderRadius.circular(10),
-
-                      ),),
+                  Bottom_With_Inkwell(
+                    icon: Icons.remove,
+                    onTap: minusNum,
                   ),
 
                   Text("$num",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Color(0xFFf3d2c1)),),
-                  InkWell(
-                    onTap:addNum ,
-
-                    child: Container(child: Center(child: Icon(Icons.add,size: 35,color: Color(0xFFfef6e4),)),
-                      height: 50,width: 45,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF8c7851),
-                        borderRadius: BorderRadius.circular(10),
-                      ),),
+                  Bottom_With_Inkwell(
+                    icon: Icons.add,
+                    onTap: addNum,
                   ),
 
                 ],
