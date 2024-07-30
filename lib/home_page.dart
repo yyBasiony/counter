@@ -50,18 +50,12 @@ class _homePageState extends State<homePage> {
                 ],
               ),
               SizedBox(height: 40,),
-              InkWell(
+              bottomWithInkwell(
+                icon: Icons.refresh,
                 onTap: resetNum,
-                child: Container(
-                  height: 60,
-                  width: 160,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFeaddcf),
-                    borderRadius: BorderRadius.circular(10),
-
-                  ),
-                  child: Center(child: Text("Reset",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w700,color: Color(0xFF8c7851)),)),
-                ),
+                size: 30.0,
+                iconColor: Color(0xFF8c7851),
+                backgroundColor: Color(0xFFeaddcf),
               ),
             ],
           ),
