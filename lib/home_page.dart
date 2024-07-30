@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:counter/bottom_with_inkwell.dart';
-
-class Home_Page extends StatefulWidget {
-  const Home_Page({super.key});
-
+class homePage extends StatefulWidget {
+  const homePage({super.key});
   @override
-  State<Home_Page> createState() => _Home_PageState();
+  State<homePage> createState() => _homePageState();
 }
-
-class _Home_PageState extends State<Home_Page> {
+class _homePageState extends State<homePage> {
   int num=0;
   void addNum(){
     setState(() {
@@ -25,8 +22,6 @@ class _Home_PageState extends State<Home_Page> {
       num=0;
     });
   }
-
-
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -34,7 +29,6 @@ class _Home_PageState extends State<Home_Page> {
         backgroundColor: Color(0xFFf582ae),
       ),
       body:
-
       Container(
         color: Color(0xFF8bd3dd),
         child: Center(
@@ -44,17 +38,15 @@ class _Home_PageState extends State<Home_Page> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Bottom_With_Inkwell(
+                  bottomWithInkwell(
                     icon: Icons.remove,
                     onTap: minusNum,
                   ),
-
                   Text("$num",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Color(0xFFf3d2c1)),),
-                  Bottom_With_Inkwell(
+                  bottomWithInkwell(
                     icon: Icons.add,
                     onTap: addNum,
                   ),
-
                 ],
               ),
               SizedBox(height: 40,),

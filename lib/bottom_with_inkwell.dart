@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class Bottom_With_Inkwell extends StatelessWidget {
+class bottomWithInkwell extends StatelessWidget {
   final IconData icon;
   final VoidCallback onTap;
   final double size;
@@ -7,7 +7,7 @@ class Bottom_With_Inkwell extends StatelessWidget {
   final Color backgroundColor;
   final double borderRadius;
 
-  const Bottom_With_Inkwell({
+  const bottomWithInkwell({
     required this.icon,
     required this.onTap,
     this.size = 35.0,
