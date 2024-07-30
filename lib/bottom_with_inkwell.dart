@@ -10,10 +10,10 @@ class bottomWithInkwell extends StatelessWidget {
   const bottomWithInkwell({
     required this.icon,
     required this.onTap,
-    this.size = 35.0,
+    required this.size,
     this.iconColor = const Color(0xFFf3d2c1),
     this.backgroundColor = const Color(0xFF8c7851),
-    this.borderRadius = 10.0,
+    this.borderRadius = 10,
   });
 
   @override

@@ -41,11 +41,15 @@ class _homePageState extends State<homePage> {
                   bottomWithInkwell(
                     icon: Icons.remove,
                     onTap: minusNum,
+                    size: 35,
+
                   ),
                   Text("$num",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Color(0xFFf3d2c1)),),
                   bottomWithInkwell(
                     icon: Icons.add,
                     onTap: addNum,
+                    size: 35,
+
                   ),
                 ],
               ),
@@ -53,7 +57,7 @@ class _homePageState extends State<homePage> {
               bottomWithInkwell(
                 icon: Icons.refresh,
                 onTap: resetNum,
-                size: 30.0,
+                size: 30,
                 iconColor: Color(0xFF8c7851),
                 backgroundColor: Color(0xFFeaddcf),
               ),
